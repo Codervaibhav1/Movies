@@ -47,7 +47,7 @@ const Moviedetails = () => {
 
   return (
     <div className='row'>
-            <div className='col-6'>
+            <div className='col-12 col-sm-6 col-md-12'>
             <h1 className='text-center my-4'>{movieDetails.original_title}</h1>
       <div className='d-flex justify-content-center'>
         <img src={imgUrl + movieDetails?.backdrop_path} alt="" />
@@ -56,7 +56,7 @@ const Moviedetails = () => {
         videoData.map(video =>  <VideoPlay key={video.id} video={video}/>)
        }
             </div>
-      <div className='col-6 text-dark'>
+      <div className='col-12 text-dark mt-5 col-md-12 col-sm-6'>
       <p>Released: {movieDetails.release_date}</p>
       <p id='rating1'>
         <h5> Rating</h5>
