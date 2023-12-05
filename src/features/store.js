@@ -1,8 +1,10 @@
 import { configureStore } from "@reduxjs/toolkit";
 import trandingReducer from './slice/trandingSlice'
+import filterReducer from './filterSlice/filterPageSlice'
 const store = configureStore({
     reducer:{
-     tranding : trandingReducer
+     tranding : trandingReducer,
+     Filter : filterReducer
     }
 })
 

@@ -21,7 +21,7 @@ const Navbar = () => {
     }
 
   return (
-    <nav className={`navbar navbar-expand-lg position-sticky z-1 top-0 ${mode === 'dark' ? 'bg-black' : 'bg-light'} shadow-lg`}>
+    <nav className={`navbar navbar-expand-lg position-sticky z-2 top-0 ${mode === 'dark' ? 'bg-black' : 'bg-light'} shadow-lg`}>
       <div className="container">
         <img id="logo" src={Logo} alt="" />
         <button

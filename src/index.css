@@ -8,6 +8,11 @@
 #card{
   height: 530px;
 }
+#second-nav{
+  position: sticky;
+  top: 65px;
+  z-index: 1;
+}
 #rating{
   width: 50px;
   position: absolute;

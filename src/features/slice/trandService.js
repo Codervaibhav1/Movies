@@ -35,7 +35,7 @@ export const fetchUpcoming = async()=>{
 
 export const fetchPageData = async(page)=>{
     const response = await axios.get(`https://api.themoviedb.org/3/movie/now_playing?page=${page}&api_key=c614824d65e8fc3257b0b8af97ed9baa`)
-    console.log(response.data.results)
+    // console.log(response.data.results)
     return response.data.results
 } 
 

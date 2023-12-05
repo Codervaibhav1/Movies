@@ -27,7 +27,7 @@ const SearchData = () => {
       <h1 className={`text-center fw-bold mb-4 text-dark`}>My Movies</h1>
         <div className="row row-cols-1 row-cols-lg-4 row-cols-sm-2 row-cols-md-3">
   {
-    searchData.map(search => <Serachpage key={search.id} search={search}/>)
+    searchData?.map(search => <Serachpage key={search.id} search={search}/>)
   }
 </div>
 </div>
