@@ -3,11 +3,12 @@ import { Link, useNavigate } from 'react-router-dom'
 import { CiLight } from "react-icons/ci";
 import { MdOutlineDarkMode } from "react-icons/md";
 import useDarkMode from './DarkLight';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { getSerachData } from '../features/slice/trandingSlice';
 import Logo from '../assets/Logo.png'
 const Navbar = () => {
     const {mode ,toggleMode} = useDarkMode() 
+    const {searchData} = useSelector((state)=> state.tranding)
     const dispacth = useDispatch()
     const navigate = useNavigate()
     const [text , setText] = useState()

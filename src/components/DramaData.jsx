@@ -7,7 +7,7 @@ const DramaData = () => {
 
     const {dramaData , isLoading} =useSelector((state)=>state.Filter)
     const dispacth = useDispatch()
-console.log(dramaData)
+// console.log(dramaData)
     useEffect(()=>{
         dispacth(getDrama())
     },[])

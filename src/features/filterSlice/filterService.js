@@ -20,18 +20,18 @@ export const fetchHorrer = async()=>{
 
 export const fetchComedy = async()=>{
     const response = await axios.get('https://api.themoviedb.org/3/discover/movie?api_key=c614824d65e8fc3257b0b8af97ed9baa&with_genres=35')
-    console.log(response.data.results)
+    // console.log(response.data.results)
     return response.data.results
 }
 
 export const fetchDrama = async()=>{
     const response = await axios.get('https://api.themoviedb.org/3/discover/movie?api_key=c614824d65e8fc3257b0b8af97ed9baa&with_genres=18')
-    console.log(response.data.results)
+    // console.log(response.data.results)
     return response.data.results
 }
 
 export const fetchMistry = async()=>{
     const response = await axios.get('https://api.themoviedb.org/3/discover/movie?api_key=c614824d65e8fc3257b0b8af97ed9baa&with_genres=9648')
-    console.log(response.data.results)
+    // console.log(response.data.results)
     return response.data.results
 }

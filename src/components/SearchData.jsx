@@ -3,12 +3,9 @@ import { useSelector } from 'react-redux'
 import Serachpage from '../pages/Serachpage'
 
 const SearchData = () => {
-    const {searchData , isLoading} = useSelector((state)=> state.tranding)
-    if(searchData.length === 0){
-        return(
-            <h1 className='text-center text-danger'>No Data Found</h1>
-        )
-    }
+    const {searchData , isLoading , isError} = useSelector((state)=> state.tranding)
+    
+  
     if(isLoading){
       return(
           <div className='d-flex justify-content-center align-item-center'>
@@ -22,6 +19,11 @@ const SearchData = () => {
 
       )
   }
+   if(searchData.length === 0){
+        return(
+            <h1 className='text-center text-danger'>No Data Found</h1>
+        )
+    }
   return (
     <div>
       <h1 className={`text-center fw-bold mb-4 text-dark`}>My Movies</h1>
